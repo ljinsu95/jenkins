@@ -28,10 +28,10 @@ public class TheMenu {
 	}
 	
 	private void init(List<SelectedData> sdList) {
-		divs.add(new Div("조식"));
-		divs.add(new Div("중식"));
-		divs.add(new Div("석식"));
-		divs.add(new Div("간식"));
+		divs.add(new Div("1"));
+		divs.add(new Div("2"));
+		divs.add(new Div("3"));
+		divs.add(new Div("4"));
 		setMonDate();
 		setTotalDate();
 		String date = monDate;
@@ -54,7 +54,6 @@ public class TheMenu {
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 			monDate = sdf.format(cd.getTime());
 			/* 
-			// 일요일 날짜 설정 
 			cd.set(year, month, cd.get(Calendar.DAY_OF_MONTH)+6);
 			sunDate = sdf.format(cd.getTime());
 			*/
